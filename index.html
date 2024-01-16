@@ -19,15 +19,15 @@
                 <img src="./Images/logo.png" alt="">
                 <h1>Dream <span>Travel</span></h1>
             </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#" id="home">Home</a></li>
-                    <li><a href="#">Packages</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+            <div class="nav" id="myTopnav">
+                <a href="#home" id="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </div>
     </section>
 
@@ -43,7 +43,7 @@
                 <p>Lets plan your <span class="text-small">Dream </span> travel to visit your place.</p>
             </div>
             <div class="banner-input">
-                <form action="#">
+                <!-- <form action="#"> -->
                     <input type="text" placeholder="where to go">
 
 
@@ -66,7 +66,7 @@
                         now</button>
 
 
-                </form>
+                <!-- </form> -->
             </div>
         </div>
     </section>
@@ -362,6 +362,19 @@
 
         </div>
     </section>
+
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav";
+          }
+        }
+        </script>
 
 </body>
 
