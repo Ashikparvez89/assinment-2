@@ -642,7 +642,36 @@
 
 .newsletter-img {
     grid-column: 7/span 6;
+    position: relative;
 }
+
+.d-box {
+    background-color: var(--pri-color);
+    padding: 16px 2px;
+    border-radius: 10px;
+    text-align: center;
+    transform: rotate(-16deg);
+    width: 41%;
+    position: absolute;
+    bottom: 84px;
+    right: 18px;
+}
+
+.d-box span {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.d-box h3 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+
 
 .newsletter-img img {
     width: 100%;
@@ -679,6 +708,7 @@
 
 .footer-social ul li span {
     font-size: 2em;
+    color: var(--sec-grey);
 }
 
 .footer-content {
@@ -860,9 +890,11 @@
         padding: 20px;
         text-align: center;
     }
-    .banner-icon{
+
+    .banner-icon {
         text-align: left;
     }
+
     .banner-1 {
         width: 93%;
     }
@@ -947,7 +979,29 @@
     .newsletter-img {
         padding: 10px;
     }
-
+    .d-box {
+        background-color: var(--pri-color);
+        padding: 15px 20px;
+        border-radius: 10px;
+        text-align: center;
+        transform: rotate(-16deg);
+        width: 41%;
+        position: absolute;
+        bottom: 84px;
+        right: 18px;
+    }
+    .d-box span {
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .d-box h3 {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 800;
+    }
     .footer-content {
         padding: 20px;
     }
