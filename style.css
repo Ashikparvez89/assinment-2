@@ -382,10 +382,13 @@
 
 .choose-us-inner {
     margin-top: 3em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr; 
     gap: 2em;
+    justify-items: center; 
+    align-items: center; 
+    position: relative;
 }
 
 .c-1 {
@@ -404,9 +407,14 @@
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
-    width: 50%;
     margin: 3em auto;
+    position: absolute;
+    bottom: -7em;
+    left: 0;
+    right: 0;
+    width: 45%;
 }
+
 
 .card {
     padding: 60px 80px;
@@ -434,10 +442,6 @@
     font-weight: 400;
 }
 
-.down-card {
-    width: 70%;
-    margin: auto;
-}
 
 
 
@@ -564,6 +568,15 @@
     gap: 40px;
 }
 
+.video-1 video {
+    width: 600px;
+    height: 340px;
+}
+
+.popular-des ul li p {
+    color: #131318;
+    font-weight: 800;
+}
 
 /* ---------- */
 /* newsletter-section */
@@ -577,7 +590,7 @@
 
 .newsletter-input {
     grid-column: 1/span 5;
-    padding: 10px 25px;
+    padding: 50px 25px;
     border: 1px solid #FF5400;
     border-radius: 15px;
 }
@@ -601,7 +614,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    margin: 2em 0;
+    margin: 1em 0;
     /* 162.5% */
 }
 
@@ -617,7 +630,7 @@
     border-radius: 5px;
     width: 23em;
     height: 3em;
-    margin: 2em auto;
+    margin: 1em auto;
     text-align: left;
     padding: 5px 20px;
     color: rgba(19, 19, 24, 0.50);
@@ -760,7 +773,10 @@
         margin-top: 2em;
     }
 
-    .banner-inner {}
+    .banner-inner {
+        max-width: 90%;
+        padding: 20px;
+    }
 
 
     .banner-title h1 {
@@ -769,12 +785,19 @@
 
     .banner-input input {
         padding: 15px;
-        width: 10em;
+        width: 22em;
+        display: block;
+        margin: 1em auto;
     }
 
-    .banner-input select {
+    .banner-input button{
+        width: 100%;
+    }
+     .banner-input select {
         padding: 15px;
-        width: 11em;
+        width: 24em;
+        display: block;
+        margin: 3em auto;
     }
 
     .popular-section {
@@ -829,8 +852,19 @@
     }
 
     .c-3 {
-        max-width: 80%;
-        padding: 60px 24px;
+        position: static;
+        width: 100%;
+    }
+
+    .banner-1,
+    .banner-2,
+    .banner-3 {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .banner-1 {
+        width: 93%;
     }
 
     .banner-1 img {
@@ -842,7 +876,8 @@
         max-width: 70%;
         position: absolute;
         top: 10%;
-        right: 8%;
+        right: 0;
+        left: 0;
         background: var(--bg-dark);
         backdrop-filter: blur(2.5px);
         padding: 2em;
@@ -859,7 +894,8 @@
         max-width: 70em;
         min-height: 45em;
     }
-    .banner-card-2{
+
+    .banner-card-2 {
         width: 80%;
         margin: auto;
     }
@@ -868,19 +904,52 @@
         flex-direction: column;
     }
 
+    .video-1 {
+        padding: 20px;
+        margin: auto;
+    }
 
-    .newsletter{
+    .video-1 video {
+        max-width: 100%;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .popular-text {
+        padding: 20px;
+    }
+
+    .newsletter-input {
+        width: 80%;
+        margin: auto;
+        padding: 30px 38px;
+    }
+
+    .newsletter {
         display: flex;
         flex-direction: column-reverse;
+        gap: 2em;
     }
-   . news-input input{
-       width: 10em;
-       margin: auto;
-   }
 
-   . video-1 iframe{
-       width: 300px;
-       height: 300px;
-   }
+    .news-input {
+        padding: 0;
+    }
+
+    .news-input input {
+        width: 90%;
+        margin: 2em auto;
+    }
+
+    .news-input button {
+        width: 100%;
+    }
+
+    .newsletter-img {
+        padding: 10px;
+    }
+
+    .footer-content {
+        padding: 20px;
+    }
 
 }
