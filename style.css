@@ -890,7 +890,7 @@
 
     .banner-2 img {
         max-width: 70em;
-        min-height: 45em;
+        min-height: 50em;
     }
 
     .banner-3 img {
@@ -900,7 +900,7 @@
 
     .banner-card-2 {
         width: 80%;
-        margin: auto;
+        margin: 2em auto;
     }
 
     .video-inner {
