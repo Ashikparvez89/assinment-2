@@ -326,6 +326,7 @@
 
 .destination-img img {
     width: 100%;
+    object-fit: contain;
 }
 
 .shadow {
@@ -384,10 +385,10 @@
     margin-top: 3em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
     gap: 2em;
-    justify-items: center; 
-    align-items: center; 
+    justify-items: center;
+    align-items: center;
     position: relative;
 }
 
@@ -785,17 +786,18 @@
 
     .banner-input input {
         padding: 15px;
-        width: 22em;
+        width: 90%;
         display: block;
         margin: 1em auto;
     }
 
-    .banner-input button{
+    .banner-input button {
         width: 100%;
     }
-     .banner-input select {
+
+    .banner-input select {
         padding: 15px;
-        width: 24em;
+        width: 376px;
         display: block;
         margin: 3em auto;
     }
@@ -831,6 +833,7 @@
         margin-top: 0em;
     }
 
+
     .img1,
     .img2,
     .img3,
@@ -838,7 +841,7 @@
     .img5,
     .img6,
     .img7 {
-        grid-column: 1/span 12;
+        grid-column: 1;
     }
 
     .choose-us-inner {
